@@ -3,45 +3,25 @@ html,body{
     height:100%;
     margin:0;
     padding:0;
+    overflow-x: hidden;
     // background: #f1f1f1;
 }
 
-
-
-.main-image{
-    margin-top:20px;
-    // position: relative;
-    background: url(./assets/home/test1.jpg) no-repeat center;
-    background-size: cover;
-    height: 277px;
-    // overflow: hidden;
-    // width: 414px;
-    // height: 277px;
-    // object-fit: cover;
+.home__main__banner{
+  width: 100vw;
 }
 
-.center-image{
-    margin-top:20px;
-    position: relative;
-    background: url(./assets/home/vid1.png) no-repeat center;
-    background-size: cover;
-    height: 600px;
-    overflow: hidden;
+.home__banner__image{
+  width: 100%;
+  // height: 250px;
+  object-fit: cover;
 }
-.inside-container{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    color: white;
-    font-weight: 700;
 
-}
-.inside-text{
-position: relative;
-text-align: center;
-top: 80%;
+.home__vimeo{
+  position: relative;
+  width: 100%;
+  // height: 200vh;
+  object-fit: fill;
 }
 
 .TerrainArt-Logo-39cropped-Copy {
@@ -74,85 +54,60 @@ top: 80%;
     text-align: left;
     color: #808080;
   }
-
-
-
-
-.img-vid {
-    display: block;
-}
-
-  .overlay {
-    position: absolute; 
-    bottom: 0; 
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1; 
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-
-
-
-.Art-conservation-and {
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    // font-family: NHaasGroteskTXPro-55Rg;
+  .footer__font__small {
+    font-family: PassengerSerif;
+    font-size: 1.1rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    color: #ffffff;
+    color: #808080;
   }
-  .lorem{ 
-    font-family: NHaasGroteskTXPro-55Rg;
+
+  .footer__font {
+    font-family: PassengerSerif;
+    font-size: .9rem;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1.5;
     letter-spacing: normal;
-    text-align: center;
-    color: #ffffff;
+    text-align: left;
+    color: #808080;
   }
+
 
   .hl {
-    border-left: 1px solid grey;
+    border-left: 1px solid #ccc8c8;
     height: 63px;
     border-bottom: none;
-    width: 0px;
+    padding-top: 40px;
     margin-bottom: 0px;
   }
 
-@media only screen and (max-width: 600px) {
-    .mb-10{
-        margin-bottom: 30px;
-    }
-    .hl {
+
+    .vl {
         border-bottom: 2px solid #ccc8c8;
         width: 63px;
         border-left: none;
-    height: 0px;
+    margin: auto;
       }
-      .font3 {
-          text-align: center;
-        }
+
+  .footer__small{display:none;}
+
+
+@media only screen and (max-width: 700px) {
+
+  .footer__big { display: none; }
+  .footer__small{display:block;}
   }
   .centerd {
-    margin: auto;
     width: 20%;
-    padding: 10px;}
+  }
 
     .font4{
-        // width: 365px;
-        // height: 38px;
-        // margin: 31px 0;
         font-family: PassengerSerif;
         font-size: 16px;
         font-weight: normal;

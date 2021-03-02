@@ -1,21 +1,17 @@
 import { Component, OnInit } from "@angular/core";
+declare var $: any;
 
 @Component({
   selector: "app-home",
   template: `
-    <div>
-    <!-- class="main-image" 
-     > -->
-    <!-- <img class="main-image" src="/assets/home/banner1.png" alt="" width="400" height="300"> -->
-    <picture>
-          <source media="(min-width:650px)" srcset="assets/home/test1.jpg" />
-          <!-- <source media="(min-width:465px)" srcset="assets/home/link@2x.png" /> -->
-          <img
-            src="assets/home/banner-mobile.png"
-            alt=""
-          /> </picture
-        >
-  </div>
+    <div class="home__main__banner">
+      <img
+        id="home__banner__image"
+        class="home__banner__image"
+        src="assets/home/test3.jpg "
+        height="246px"
+      />
+    </div>
 
     <div class="spacer-icon">
       <img src="/assets/home/intach.png" class=" mx-auto d-block" alt="..." />
@@ -58,31 +54,39 @@ import { Component, OnInit } from "@angular/core";
       <div class="col"></div>
     </div>
 
-    <!-- TRYRYRYRYRY -->
-
-    <div class="center-image">
-      <div class="inside-container">
-        <img class="" src="assets/home/play1.png" alt="" />
+    <div class="home__vimeo" style="margin:0px;padding:0px;overflow:hidden">
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+          src="https://player.vimeo.com/video/495701517?title=0&byline=0&portrait=0"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
-      <div class="inside-text">
-        <h4>
-          <span class="Art-conservation-and "
-            >Art conservation and restoration at INTACH</span
-          >
-        </h4>
-        <h6>
-          <span class="lorem"
-            >Lorem Ipsum has been the industry's standard dummy text</span
-          >
-        </h6>
-      </div>
+      <script src="https://player.vimeo.com/api/player.js"></script>
     </div>
-    
   `,
   styles: [],
 })
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    var dataArray = new Array();
+    dataArray[0] = "assets/home/006.jpg";
+    dataArray[1] = "assets/home/0H2A1673 (1920px).jpg";
+    dataArray[2] = "assets/home/nur homepage banner 2.jpg";
+    dataArray[3] = "assets/home/test1.jpg";
+    // dataArray[4] = "assets/home/banner-mobile.png";
+
+    //start with id=0 after 5 seconds
+    var thisId = 0;
+
+    window.setInterval(function () {
+      $("#home__banner__image").attr("src", dataArray[thisId]);
+      thisId++; //increment data array id
+      if (thisId == 4) thisId = 0; //repeat from start
+    }, 5000);
+  }
 }
