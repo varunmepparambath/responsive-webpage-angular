@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular-site": {
+    "terrain_art": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -44,7 +44,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-angular-site",
+            "outputPath": "dist/terrain_art",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -95,22 +95,22 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular-site:build"
+            "browserTarget": "terrain_art:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angular-site:build:production"
+              "browserTarget": "terrain_art:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angular-site:build"
+            "browserTarget": "terrain_art:build"
           }
         }
       }
     }
   },
-  "defaultProject": "my-angular-site"
+  "defaultProject": "terrain_art"
 }
