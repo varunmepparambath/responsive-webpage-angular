@@ -35,11 +35,30 @@ html,body{
 }
 
 .home__vimeo{
+
   position: relative;
-  width: 100%;
-  // height: 200vh;
-  object-fit: fill;
+  // width: 
+  height: 100vh;
+  width: 100vw;
+  // max-height: 100vh;
+  // object-fit: cover;
+  overflow: hidden;
 }
+.home__vimeo__iframe{
+  // width: 100%;
+  // // height: 250px;
+  // position:center;
+  // object-fit: cover;
+
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+
+}
+
 
 .TerrainArt-Logo-39cropped-Copy {
     width: 140px;
