@@ -3,9 +3,9 @@ import { Component, OnInit } from "@angular/core";
 @Component({
   selector: "app-header",
   template: `
-    <nav class="navbar navbar-expand-lg navbar-light bg-white "style="padding-top:37px;padding-bottom:41px;padding-left:100px">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white home__nav">
       <div class="container-fluid ">
-        <a class="navbar-brand " href="#" style="padding-right:63px;">
+        <a class="navbar-brand " href="#" >
           <img
             src="/assets/header/logo.png"
             alt=""
