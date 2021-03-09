@@ -8,10 +8,11 @@ import { Component, OnInit } from "@angular/core";
         <div class="col-2"></div>
         <div class="col-3 text-center">
           <img
-            src="/assets/home/intach-2.png"
-            class=" pt-3 pb-2 mx-auto"
+            src="/assets/home/intach-2x.png"
+            class="mx-auto"
             alt="..."
-            style="max-width:86px;max-height:80px;"
+            width="60px"
+            height="56px"
           />
         </div>
         <div class="col-1 mb-10">
@@ -72,22 +73,24 @@ import { Component, OnInit } from "@angular/core";
 
       <div
         class="row footer__small"
-        style="background-color: #f6f6f6; padding-top:5%"
+        style="background-color: #f6f6f6;"
       >
         <div class="col-md-2"></div>
-        <div class="col-xs-12 col-sm-12 text-center">
-          <picture>
-            <source
+        <div class="col-xs-12 col-sm-12 text-center spacer-icon1">
+          <!-- <picture> -->
+            <!-- <source
               media="(min-width:650px)"
-              srcset="assets/home/intach-2.png"
-            />
+              srcset="assets/home/intach-2x.png"
+            /> -->
             <img
-              src="/assets/home/intach.png"
-              class=" pt-3 pb-2 mx-auto"
+              src="/assets/home/intach-2x.png"
+              class="mx-auto"
               alt="..."
-              style="max-width:86px;max-height:80px;margin-top:8px;margin-bottom:20px;"
+              style=""
+              height="56px"
+              width="60px"
             />
-          </picture>
+          <!-- </picture> -->
         </div>
         <div class="col-xs-12 col-sm-12 mb-10">
           <div class="vl centerd"></div>

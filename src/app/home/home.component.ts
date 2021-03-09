@@ -13,8 +13,8 @@ declare var $: any;
       />
     </div>
 
-    <div class="spacer-icon">
-      <img src="/assets/home/intach.png" class=" mx-auto d-block" alt="..." />
+    <div class="spacer-icon1"> 
+      <img src="/assets/home/intach-2x.png" class=" mx-auto d-block" alt="..." height="60" width="56" />
     </div>
     <h2 class="text-center font1">
       Indian National Trust for Art and Cultural Heritage
@@ -55,21 +55,11 @@ declare var $: any;
     </div>
 
     <div class="home__vimeo">
-      <!-- <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe
-          src="https://player.vimeo.com/video/495701517?title=0&byline=0&portrait=0"
-          style="position:absolute;top:0;left:0;width:100%;height:80%;overflow:hidden;"
-          frameborder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div> -->
-      <!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
       <iframe
       class="home__vimeo__iframe"
-        src="https://player.vimeo.com/video/495701517?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+        src="https://player.vimeo.com/video/495701517?muted=1&autoplay=1&loop=1&title=0&byline=0&portrait=1"
         width="1600"
-        height="900"
+        height="800"
         frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen

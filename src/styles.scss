@@ -1,50 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
-html,body{
-    height:100%;
-    margin:0;
-    padding:0;
-    overflow-x: hidden;
-    // background: #f1f1f1;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  // background: #f1f1f1;
 }
 
-.home__nav{
-  padding-top:37px;
-  padding-bottom:41px;
-  padding-left:100px;
-}
-
-.home__brand{
-  padding-right:63px;
+.brand__img {
+  height: 24px;
+  width: 140px;
+  margin-right:45px;
 }
 
 
-.black__text{
+.spacer-icon1{
+  margin-top: 103px;
+  margin-bottom: 50px;
+}
+
+
+
+.home__nav {
+  padding-top: 30px;
+  padding-bottom: 33px;
+  padding-left: 103px;
+}
+
+
+
+.home__brand {
+  padding-right: 63px;
+
+}
+
+.black__text {
   color: #000000 !important;
+  // font-weight: 400;
 }
 
-
-
-.home__main__banner{
+.home__main__banner {
   width: 100vw;
 }
 
-.home__banner__image{
+.home__banner__image {
   width: 100%;
   // height: 250px;
   object-fit: cover;
 }
 
-.home__vimeo{
-
+.home__vimeo {
   position: relative;
-  // width: 
+  // width:
   height: 100vh;
   width: 100vw;
   // max-height: 100vh;
   // object-fit: cover;
   overflow: hidden;
 }
-.home__vimeo__iframe{
+.home__vimeo__iframe {
   // width: 100%;
   // // height: 250px;
   // position:center;
@@ -55,102 +70,120 @@ html,body{
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%);
+}
 
+.TerrainArt-Logo-39cropped-Copy {
+  width: 140px;
+  height: 24px;
+  margin: 0 67.5px 41px 104px;
+}
+.spacer-icon {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.font1 {
+  font-family: Arial, Helvetica, sans-serif;
+  // font-size: 34px;
+}
+
+.font2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #808080;
+}
+.font3 {
+  font-family: PassengerSerif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #808080;
+}
+.footer__font__small {
+  font-family: PassengerSerif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #808080;
+}
+
+.footer__font {
+  font-family: PassengerSerif;
+  font-size: 0.9rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #808080;
+}
+
+.hl {
+  border-left: 1px solid #ccc8c8;
+  height: 63px;
+  border-bottom: none;
+  padding-top: 40px;
+  margin-bottom: 0px;
+}
+
+.vl {
+  border-bottom: 2px solid #ccc8c8;
+  width: 63px;
+  border-left: none;
+  margin: auto;
+}
+
+.footer__small {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer__big {
+    display: none;
+  }
+  .footer__small {
+    display: block;
+  }
+
+  .brand__img {
+    height: 16px;
+    width: 94px;
+  }
+  .home__nav {
+  padding-top: 23px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+    
+  }
+  .spacer-icon1{
+    margin-top: 50px;
+    margin-bottom: 26px;
+  }
+
+}
+.centerd {
+  width: 20%;
+}
+
+.font4 {
+  font-family: PassengerSerif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0l;
+  letter-spacing: normal;
+  text-align: left;
+  color: #808080;
 }
 
 
-.TerrainArt-Logo-39cropped-Copy {
-    width: 140px;
-    height: 24px;
-    margin: 0 67.5px 41px 104px;
-  }
- .spacer-icon{
-    margin-top: 10% ;
-    margin-bottom: 5%;
-  }
-  .font1 {
-    font-family: Arial, Helvetica, sans-serif;
-    // font-size: 34px;
-  }
-  
-  .font2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #808080;
-  }
-  .font3 {
-    font-family: PassengerSerif;
-    font-size: 1.1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #808080;
-  }
-  .footer__font__small {
-    font-family: PassengerSerif;
-    font-size: 1.1rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #808080;
-  }
-
-  .footer__font {
-    font-family: PassengerSerif;
-    font-size: .9rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #808080;
-  }
-
-
-  .hl {
-    border-left: 1px solid #ccc8c8;
-    height: 63px;
-    border-bottom: none;
-    padding-top: 40px;
-    margin-bottom: 0px;
-  }
-
-
-    .vl {
-        border-bottom: 2px solid #ccc8c8;
-        width: 63px;
-        border-left: none;
-    margin: auto;
-      }
-
-  .footer__small{display:none;}
-
-
-@media only screen and (max-width: 700px) {
-
-  .footer__big { display: none; }
-  .footer__small{display:block;}
-  }
-  .centerd {
-    width: 20%;
-  }
-
-    .font4{
-        font-family: PassengerSerif;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 0l;
-        letter-spacing: normal;
-        text-align: left;
-        color: #808080;
-      }
