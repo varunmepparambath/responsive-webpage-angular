@@ -4,7 +4,10 @@ import { Component, OnInit } from "@angular/core";
   selector: "app-footer",
   template: `
     <footer class="footer">
-      <div class="row py-5 footer__big" style="background-color: #f6f6f6; ">
+
+<!-- foooter for big  -->
+
+      <div class="row py-footer footer__big" style="background-color: #f6f6f6; ">
         <div class="col-2"></div>
         <div class="col-3 text-center">
           <img
@@ -40,12 +43,12 @@ import { Component, OnInit } from "@angular/core";
                   &nbsp; Email:
                   <a href="mailto: intach@intach.org">intach@intach.org</a>
                 </span>
-              </div>
-            </div>
-            <div class="col px-0 ">
-              <div class="">
+              <!-- </div>
+            </div> -->
+            <!-- <div class="col px-0 "> -->
+              <!-- <div class=""> -->
                 <span
-                  style="color:#808080;font-size: .9rem;"
+                  style="color:#808080;font-size: .9rem;margin-left:40px"
                   class="text-center"
                 >
                   <img
@@ -62,6 +65,10 @@ import { Component, OnInit } from "@angular/core";
           </div>
         </div>
       </div>
+
+
+<!-- foooter for big  ends-->
+
 <!------    ----->
 
 
